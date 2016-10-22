@@ -24,7 +24,7 @@
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="driverClassName" value="org.postgresql.Driver" />
 		<property name="url"
-			value="jdbc:postgresql://ec2-54-243-229-49.compute-1.amazonaws.com:5432/dd6gi4afojevkv?user=zafaxvwsifvfvf&amp;password=HvkyNYovN3lGit_GtMh8024Stu&amp;sslmode=require" />
+			value="jdbc:postgresql://ec2-54-163-245-3.compute-1.amazonaws.com:5432/dd6gi4afojevkv?user=zafaxvwsifvfvf&amp;password=HvkyNYovN3lGit_GtMh8024Stu&amp;sslmode=require" />
 
 		<property name="username" value="zafaxvwsifvfvf" />
 		<property name="password" value="HvkyNYovN3lGit_GtMh8024Stu" />
