@@ -14,22 +14,22 @@
 	<context:component-scan base-package="com.sample.controller"></context:component-scan>
 
 	<!-- Configure JDBC Connection -->
-	<!-- <bean id="dataSource"
-		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="driverClassName" value="org.postgresql.Driver" />
-		<property name="url" value="jdbc:postgresql://localhost:5432/loginuser" />
-		<property name="username" value="postgres" />
-		<property name="password" value="postgres" />
-	</bean> -->
-	
+	<!-- <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"> 
+		<property name="driverClassName" value="org.postgresql.Driver" /> <property 
+		name="url" value="jdbc:postgresql://localhost:5432/loginuser" /> <property 
+		name="username" value="postgres" /> <property name="password" value="postgres" 
+		/> </bean> -->
+
 	<bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-			<property name="driverClassName" value="org.postgresql.Driver" />
-			<property name="url" value="jdbc:postgresql://ec2-54-163-245-3.compute-1.amazonaws.com:5432/dd6gi4afojevkv?user=zafaxvwsifvfvf;password=HvkyNYovN3lGit_GtMh8024Stu&amp;sslmode=require"/>
-			<property name="username" value="zafaxvwsifvfvf" />
-			<property name="password" value="HvkyNYovN3lGit_GtMh8024Stu" />
+		<property name="driverClassName" value="org.postgresql.Driver" />
+		<property name="url"
+			value="jdbc:postgresql://ec2-54-243-229-49.compute-1.amazonaws.com:5432/dd6gi4afojevkv?user=zafaxvwsifvfvf&amp;password=HvkyNYovN3lGit_GtMh8024Stu&amp;sslmode=require" />
+
+		<property name="username" value="zafaxvwsifvfvf" />
+		<property name="password" value="HvkyNYovN3lGit_GtMh8024Stu" />
 	</bean>
-	
+
 
 	<!-- Configure Hibernate 4 Session Facotry -->
 	<bean id="sessionFactory"
@@ -41,7 +41,7 @@
 			<props>
 				<prop key="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</prop>
 				<prop key="hibernate.show_sql">true</prop>
-				<prop key="hibernate.hbm2ddl.auto">create</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
 			</props>
 		</property>
 		<property name="annotatedClasses">
